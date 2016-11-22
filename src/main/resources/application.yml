@@ -1,3 +1,11 @@
+security.basic.enabled: false
 spring:
   profiles:
     active: dev
+swagger:
+  title: bookstore API
+  description: bookstore applications and beyond!
+  termsOfServiceUrl: http://morrle.ngfile.com/
+  contact:
+  license: Apache 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.html
