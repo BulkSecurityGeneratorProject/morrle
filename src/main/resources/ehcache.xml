@@ -20,6 +20,15 @@
     <cache name="com.morrle.domain.Person"
            timeToLiveSeconds="3600">
     </cache>
+    <cache name="com.morrle.domain.User"
+           timeToLiveSeconds="3600">
+    </cache>
+    <cache name="com.morrle.domain.Authority"
+           timeToLiveSeconds="3600">
+    </cache>
+    <cache name="com.morrle.domain.User.authorities"
+           timeToLiveSeconds="3600">
+    </cache>
 
 
 </ehcache>

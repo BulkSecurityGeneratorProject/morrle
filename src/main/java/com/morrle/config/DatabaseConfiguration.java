@@ -3,7 +3,6 @@ package com.morrle.config;
 import com.codahale.metrics.MetricRegistry;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
-import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +22,7 @@ import java.util.Arrays;
 
 @Configuration
 @EnableJpaRepositories("com.morrle.repository")
-//@EnableJpaAuditing(auditorAwareRef = "springSecurityAuditorAware")
+@EnableJpaAuditing(auditorAwareRef = "springSecurityAuditorAware")
 @EnableTransactionManagement
 public class DatabaseConfiguration implements EnvironmentAware {
     private final Logger log = LoggerFactory.getLogger(DatabaseConfiguration.class);
@@ -68,6 +67,9 @@ public class DatabaseConfiguration implements EnvironmentAware {
         }
         return new HikariDataSource(config);
     }
-
+//    @Bean
+//    public Hibernate4Module hibernate4Module() {
+//        return new Hibernate4Module();
+//    }
 
 }

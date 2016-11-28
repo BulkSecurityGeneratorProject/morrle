@@ -1,0 +1,29 @@
+<div class="menu-column">
+        <a href="/explore/recommend" class="menu-item menu-active">最新推荐</a>
+        <a href="/explore/recommend" class="menu-item">热门资源</a>
+
+</div>
+<ul class="list-group">
+    <li class="list-group-item" ng-repeat="resource in resources">
+        <div class="media" >
+            <div class="media-left media-middle">
+                <a href="#">
+                    <img class="user-img" src="assets/images/no_portrait.png" alt="...">
+                </a>
+            </div>
+            <div class="media-body">
+                <div class="media-heading resource-title"><a ui-sref="resource({id:resource.id})">zhangsan/资源标题</a><span class="badge">java</span>
+                    <div class="pull-right section">
+                        <a class="section-item" href="#"><i class="iconfont icon-anzhuo34"></i>12</a>
+                        <a class="section-item" href="#"><i class="iconfont icon-xiazai"></i>10</a>
+                    </div>
+                </div>
+                <p>
+                   资源简介资源简介资源简介资源简介资源简介....
+                </p>
+
+            </div>
+        </div>
+    </li>
+</ul>
+

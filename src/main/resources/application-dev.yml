@@ -29,3 +29,8 @@ cache:
   timeToLiveSeconds: 3600
   ehcache:
     maxBytesLocalHeap: 16M
+authentication:
+  oauth:
+    clientid: morrle
+    secret: morrle_secret
+    token-validityIn-seconds: 1800

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>morrle文件共享平台</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css assets/styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css assets/styles/main.css -->
+    <link rel="stylesheet" href="assets/styles/iconfont.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <!-- endbuild -->
+
+</head>
+
+<body ng-app="morrleApp">
+<div ui-view="nav"></div>
+<div ui-view="body">
+    body加载中...
+</div>
+<div class="footer">
+    <p translate="footer">This is your footer</p>
+</div>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/modernizr/modernizr.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/json3/lib/json3.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-translate/angular-translate.js"></script>
+<script src="bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
+<script src="bower_components/angular-translate-loader-partial/angular-translate-loader-partial.js"></script>
+<script src="bower_components/angular-dynamic-locale/src/tmhDynamicLocale.js"></script>
+<script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+<script src="bower_components/angular-cache-buster/angular-cache-buster.js"></script>
+<script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,src/main/webapp}) scripts/app.js -->
+<script src="scripts/app/app.js"></script>
+<script src="scripts/app/app.constants.js"></script>
+<script src="scripts/components/body/body.js"></script>
+<script src="scripts/app/main/main.controller.js"></script>
+<script src="scripts/components/header/header.js"></script>
+<script src="scripts/components/header/header.controller.js"></script>
+<script src="scripts/components/entiry/resource/resource.service.js"></script>
+<script src="scripts/app/entities/resource/resource-detail.js"></script>
+<script src="scripts/app/entities/resource/resource-detail.controller.js"></script>
+<script src="scripts/app/entities/comment/comment.js"></script>
+<script src="scripts/components/auth/auth.service.js"></script>
+<script src="scripts/components/auth/principal.service.js"></script>
+<script src="scripts/components/auth/authority.directive.js"></script>
+<script src="scripts/components/auth/provider/auth.oauth2.service.js"></script>
+<script src="scripts/components/auth/services/account.service.js"></script>
+<script src="scripts/components/auth/services/activate.service.js"></script>
+<script src="scripts/components/auth/services/password.service.js"></script>
+<script src="scripts/components/auth/services/register.service.js"></script>
+<script src="scripts/components/form/form.directive.js"></script>
+<script src="scripts/app/account/login/login.js"></script>
+<script src="scripts/app/account/login/login.controller.js"></script>
+<script src="scripts/app/account/register/register.js"></script>
+<script src="scripts/app/account/register/register.controller.js"></script>
+<script src="scripts/components/util/base64.service.js"></script>
+<script src="scripts/components/util/dateutil.service.js"></script>
+<script src="scripts/components/util/parse-links.service.js"></script>
+<script src="scripts/components/util/truncate.filter.js"></script>
+<!-- endbuild -->
+</body>
+</html>

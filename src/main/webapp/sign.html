@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="assets/styles/sign.css">
+    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>-->
+    <style>
+
+    </style>
+    <title>登录/注册</title>
+</head>
+<body>
+<div class="index-main">
+    <div class="index-main-body">
+        <div class="index-header">
+            <h1 class="logo hide-text">千寻</h1>
+            <h2 class="subtitle">生活热爱分享 - Thousands Find</h2>
+        </div>
+        <div class="desk-front sign-flow clearfix sign-flow-simple" style="display: block;">
+            <div class="index-tab-navs">
+                <div class="navs-slider" data-active-index="1">
+                    <a href="#signup" id="signup" class="">注册</a>
+                    <a href="#signin" id="signin" class="active">登录</a>
+                    <span class="navs-slider-bar"></span>
+                </div>
+            </div>
+
+            <!--登录表单-->
+            <div class="view view-signin" 　 style="display: block;">
+                <form action="" method="post" novalidate="novalidate">
+                    <div class="group-inputs">
+                        <div class="username input-wrapper">
+                            <input required="" type="text" name="username" aria-label="姓名" placeholder="姓名">
+                        </div>
+                        <div class="password input-wrapper">
+                            <input type="password" name="password" aria-label="密码" placeholder="密码">
+                        </div>
+                    </div>
+                    <div class="button-wrapper command">
+                        <button class="sign-button submit" type="submit">登录</button>
+                    </div>
+                </form>
+            </div>
+            <!--注册表单-->
+            <div class="view view-signup" style="display: none;">
+                <form action="" method="post" novalidate="novalidate">
+                    <div class="group-inputs">
+                        <div class="username input-wrapper">
+                            <input required="" type="text" name="username" aria-label="姓名" placeholder="姓名">
+                        </div>
+                        <div class="email input-wrapper">
+                            <input type="email" name="email" aria-label="邮箱" placeholder="邮箱">
+                        </div>
+                        <div class="password input-wrapper">
+                            <input type="password" name="password" aria-label="密码" placeholder="密码">
+                        </div>
+                    </div>
+                    <div class="button-wrapper command">
+                        <button class="sign-button submit" type="submit">注册千寻</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="scripts/components/sign/jq_sign.js"></script>
+</body>
+</html>

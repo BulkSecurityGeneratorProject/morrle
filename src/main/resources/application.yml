@@ -2,6 +2,20 @@ security.basic.enabled: false
 spring:
   profiles:
     active: dev
+async:
+  corePoolSize: 2
+  maxPoolSize: 50
+  queueCapacity: 10000
+
+mail:
+  host: localhost
+  port: 25
+  username:
+  password:
+  protocol: smtp
+  tls: false
+  auth: false
+  from: bookstore@localhost
 swagger:
   title: bookstore API
   description: bookstore applications and beyond!
